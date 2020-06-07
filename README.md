@@ -1,3 +1,6 @@
 # Deno Example
 
-* write_file: `deno run --allow-write write_file/main.ts`
+## File
+
+* write: `deno run --allow-write file/writeFile.ts`
+* read: `deno run --allow-read file/readFile.ts`
