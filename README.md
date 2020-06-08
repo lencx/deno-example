@@ -8,7 +8,7 @@
 ## Server
 
 * simple server: `deno run --allow-net server/simpleServer.ts`
-* REST API: `deno run --allow-net server/restAPI.ts`
+* REST API: `deno run --allow-net server/rest_api/main.ts`
 
 ## ERROR
 
