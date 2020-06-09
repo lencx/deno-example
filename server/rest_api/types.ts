@@ -1,5 +1,10 @@
+/**
+ * @author: lencx
+ * @create_at: Jun 09, 2020
+ */
+
 export interface Product {
-  id: number;
+  id: string;
   name: string;
   description: string;
   price: number;

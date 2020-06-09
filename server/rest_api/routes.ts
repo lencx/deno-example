@@ -1,3 +1,8 @@
+/**
+ * @author: lencx
+ * @create_at: Jun 09, 2020
+ */
+
 import { Router } from './deps.ts';
 import { getProducts, getProduct, addProduct, updateProduct, deleteProduct } from './controllers/products.ts';
 
