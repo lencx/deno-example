@@ -3,8 +3,10 @@
  * @create_at: Jun 07, 2020
  */
 
-const file = await Deno.open('./file/greet.txt');
+const decoder = new TextDecoder("utf-8");
 
-await Deno.copy(file, Deno.stdout);
+const file = await Deno.readFile('./file/greet.txt');
 
-file.close();
+const content = decoder.decode(file);
+
+console.log(content);

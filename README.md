@@ -1,9 +1,14 @@
 # Deno Example
 
+```js
+"node".split("").sort().join("");
+```
+
 ## File
 
 * write: `deno run --allow-write file/writeFile.ts`
 * read: `deno run --allow-read file/readFile.ts`
+* cat: `deno run --allow-read file/cat.ts ./file/cat.ts ./LICENSE`
 
 ## Server
 
