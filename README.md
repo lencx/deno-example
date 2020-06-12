@@ -15,6 +15,10 @@
 * simple server: `deno run --allow-net server/simpleServer.ts`
 * REST API: `deno run --allow-net server/rest_api/main.ts`
 
+## Unstable
+
+* import maps: `deno run --unstable --allow-net --importmap=./unstable/import_map.json unstable/importMaps.ts`
+
 ## ERROR
 
 ```bash
