@@ -10,11 +10,12 @@
 * REST API: `deno run --allow-net server/rest_api/main.ts`
 
 ## Deno API
-
-* [file/write]: `deno run --allow-write file/writeFile.ts`
-* [file/read]: `deno run --allow-read file/readFile.ts`
-* [file/cat]: `deno run --allow-read file/cat.ts ./file/cat.ts ./LICENSE`
-* [unstable/import_maps]: `deno run --unstable --allow-net --importmap=./unstable/import_map.json unstable/importMaps.ts`
+<!-- deno_api -->
+* [file/write]: `deno run --allow-write deno_api/file/writeFile.ts`
+* [file/read]: `deno run --allow-read deno_api/file/readFile.ts`
+* [file/cat]: `deno run --allow-read deno_api/file/cat.ts ./LICENSE`
+* [unstable/import_maps]: `deno run --unstable --allow-net --importmap=deno_api/unstable/import_map.json deno_api/unstable/importMaps.ts`
+* [performance]: `deno run deno_api/performance.ts`
 * [subprocess]
 
   ```bash

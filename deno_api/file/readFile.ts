@@ -5,7 +5,7 @@
 
 const decoder = new TextDecoder("utf-8");
 
-const file = await Deno.readFile('./file/greet.txt');
+const file = await Deno.readFile('./gen/greet.txt');
 
 const content = decoder.decode(file);
 
