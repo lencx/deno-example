@@ -4,22 +4,31 @@
  */
 
 const args = Deno.args;
+const encode = (str: string) => new TextEncoder().encode(str);
+const print = (output: Uint8Array) => Deno.stdout.write(output);
 
-const p = Deno.run({
-  cmd: args,
-  stdout: 'piped',
-  stderr: 'piped',
-})
+let p;
+
+try {
+  p = Deno.run({
+    cmd: args,
+    stdout: 'piped',
+    stderr: 'piped',
+  })
+} catch (e) {
+  const errMsg = encode(`command not found: ${args[0]}\n`);
+  await print(errMsg);
+  Deno.exit();
+}
 
 const { code } = await p.status();
 
 if (code === 0) {
   const output = await p.output();
-  await Deno.stdout.write(output);
+  await print(output);
 } else {
   const err = await p.stderrOutput();
-  const errMsg = new TextDecoder().decode(err);
-  console.error(errMsg);
+  await print(err);
 }
 
 Deno.exit(code);
