@@ -4,40 +4,19 @@
 "node".split("").sort().join("");
 ```
 
-## Server
+## [Running example](./RUN.md)
 
-* simple server: `deno run --allow-net server/simpleServer.ts`
-* REST API: `deno run --allow-net server/rest_api/main.ts`
+## [Error solution](./ERROR.md)
 
-## Deno API
-<!-- deno_api -->
-* [file/write]: `deno run --allow-write deno_api/file/writeFile.ts`
-* [file/read]: `deno run --allow-read deno_api/file/readFile.ts`
-* [file/cat]: `deno run --allow-read deno_api/file/cat.ts ./LICENSE`
-* [unstable/import_maps]: `deno run --unstable --allow-net --importmap=deno_api/unstable/import_map.json deno_api/unstable/importMaps.ts`
-* [performance]: `deno run deno_api/performance.ts`
-* [subprocess]
+## Resources
 
-  ```bash
-  # 1. list directory contents
-  deno run --allow-run ./deno_api/subprocess.ts ls
-  # 2. 🟢 success
-  deno run --allow-run ./deno_api/subprocess.ts deno -h
-  # 3. 🔴 fail
-  # error: Found argument 'xx' which wasn't expected, or isn't valid in this context
-  deno run --allow-run ./deno_api/subprocess.ts deno xx
-  ```
-
-## ERROR
-
-```bash
-# oak download error
-error: error sending request for url (https://raw.githubusercontent.com/pillarjs/path-to-regexp/v6.1.0/src/index.ts): error trying to connect: tcp connect error: Connection refused (os error 61)
-
-# DNS Settings:
-# `114.114.114.114` or `8.8.8.8`
-```
-
-## Reference
-
-* [1](https://dev.to/lampewebdev/writing-webassembly-in-rust-and-runing-it-in-deno-144j)
+* [Awesome Deno](https://github.com/denolib/awesome-deno)
+* [Deno中文文档](https://deno.bootcss.com)
+* [Deno中文社区](https://denocn.org)
+* [The Deno Handbook: A TypeScript Runtime Tutorial with Code Examples](https://www.freecodecamp.org/news/the-deno-handbook)
+* [Deno: Learn by Example](https://ahmadawais.com/deno)
+* [Learn Deno: Chat app](https://aralroca.com/blog/learn-deno-chat-app)
+* [Writing WebAssembly in Rust and running it in Deno!](https://dev.to/lampewebdev/writing-webassembly-in-rust-and-runing-it-in-deno-144j)
+* [Simple REST API with Deno](https://dev.to/am77/deno-v1-0-303j)
+* [Write a small API using Deno](https://dev.to/kryz/write-a-small-api-using-deno-1cl0)
+* Keep updating...
