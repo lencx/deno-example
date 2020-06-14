@@ -8,6 +8,7 @@
 ## Running example
 
 ```bash
+# use `lcc` code snippets
 deno run --allow-read cmd.ts
 ```
 
