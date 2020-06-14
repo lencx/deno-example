@@ -9,7 +9,8 @@
 
 ```bash
 # use `lcc` code snippets
-deno run --allow-read cmd.ts
+# generate `cmd.output` file
+deno run --allow-read cmd.ts [--update]
 ```
 
 ## [Error handling](./ERROR.md)

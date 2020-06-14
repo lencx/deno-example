@@ -1,0 +1,8 @@
+[33m[01] api/performance.ts: [32mdeno run api/performance.ts
+[33m[02] api/subprocess.ts: [32mdeno run --allow-run api/subprocess.ts [command]
+[33m[03] api/unstable/importMaps.ts: [32mdeno run --unstable --allow-net --importmap=config/import_map.json api/unstable/importMaps.ts
+[33m[04] api/fs/read.ts: [32mdeno run --allow-read api/fs/read.ts
+[33m[05] api/fs/cat.ts: [32mdeno run --allow-read api/fs/cat.ts [file ...]
+[33m[06] api/fs/write.ts: [32mdeno run --allow-write api/fs/write.ts
+[33m[07] server/simpleServer.ts: [32mdeno run --allow-net server/simpleServer.ts
+[33m[09] server/rest_api/main.ts: [32mdeno run --allow-net server/rest_api/main.ts
