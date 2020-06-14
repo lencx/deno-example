@@ -1,6 +1,7 @@
 /**
  * @author: lencx
  * @create_at: Jun 14, 2020
+ * @cmd: deno run api/performance.ts
  */
 
 const start = performance.now();

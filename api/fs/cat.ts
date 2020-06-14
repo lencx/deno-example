@@ -1,6 +1,7 @@
 /**
  * @author: lencx
  * @create_at: Jun 10, 2020
+ * @cmd: deno run --allow-read api/fs/cat.ts [file ...]
  */
 
 // `Deno.args` are the arguments

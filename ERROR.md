@@ -1,4 +1,4 @@
-# Error solution
+# Error handling
 
 ```bash
 # oak download error

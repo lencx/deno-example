@@ -1,6 +1,7 @@
 /**
  * @author: lencx
  * @create_at: Jun 08, 2020
+ * @cmd: deno run --allow-net server/simpleServer.ts
  */
 
 import { serve } from "https://deno.land/std/http/server.ts";

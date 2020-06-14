@@ -1,6 +1,7 @@
 /**
  * @author: lencx
  * @create_at: Jun 13, 2020
+ * @cmd: deno run --allow-run api/subprocess.ts [command]
  */
 
 const args = Deno.args;

@@ -1,6 +1,7 @@
 /**
  * @author: lencx
  * @create_at: Jun 07, 2020
+ * @cmd: deno run --allow-write api/fs/write.ts
  */
 
 const encooder = new TextEncoder();

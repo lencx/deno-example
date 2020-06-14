@@ -1,6 +1,7 @@
 /**
  * @author: lencx
  * @create_at: Jun 09, 2020
+ * @cmd: deno run --allow-net server/rest_api/main.ts
  */
 
 import { Application } from './deps.ts';
