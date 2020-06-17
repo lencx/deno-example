@@ -27,7 +27,7 @@ try {
 } catch (e) {}
 
 const files = getFiles({
-  dir: '.',
+  root: '.',
   include: ['api', 'server'],
 });
 
@@ -44,13 +44,13 @@ for (const [index, file] of files.entries()) {
 
       if (isTree) {
         // format: tree
-        let _path: any = file.path.split(`/${file.filename}`);
+        let _path: any = file.path.split(`/${file.name}`);
         if (!pathMap.has(_path[0])) {
           pathMap.set(_path[0], null);
           _path = `[${_path[0]}]
-|    \`-<${file.filename}>`;
+|    \`-<${file.name}>`;
         } else {
-          _path = `|    \`-<${file.filename}>`;
+          _path = `|    \`-<${file.name}>`;
         }
         fmtTxt = encoder.encode(`${yellow(`${_path}`)}: ${green(cmd)}\n`);
       } else {
