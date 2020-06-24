@@ -31,10 +31,10 @@ const files = getFiles({
   include: ['api', 'server'],
 });
 
+let cmdCount = 0;
 for (const [index, file] of files.entries()) {
   const bytes = await Deno.readFile(file.path);
   const content = decoder.decode(bytes);
-  const num = `[${String(index+1).padStart(2, '0')}]`;
   let fmtTxt;
 
   content.split('\n').some((line, index) => {
@@ -55,7 +55,9 @@ for (const [index, file] of files.entries()) {
         fmtTxt = encoder.encode(`${yellow(`${_path}`)}: ${green(cmd)}\n`);
       } else {
         // format: default
-        fmtTxt = encoder.encode(`${yellow(`${num} ${file.path}`)}: ${green(cmd)}\n`);
+        cmdCount += 1;
+        const fmtCount = `[${String(cmdCount).padStart(2, '0')}]`;
+        fmtTxt = encoder.encode(`${yellow(`${fmtCount} ${file.path}`)}: ${green(cmd)}\n`);
       }
 
       Deno.stdout.write(fmtTxt);
