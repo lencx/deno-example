@@ -19,6 +19,7 @@ type ResolveType {
 
 type Query {
   getProducts: [Product!]!
+  searchProducts(search: String): [Product!]!
 }
 
 type Mutation {

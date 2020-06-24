@@ -23,6 +23,10 @@ export const gqlResolvers = {
     getProducts: () => {
       return products;
     },
+    searchProducts: (_: any, { search }: any) => {
+      const findProducts = products.filter(p => p.name.toLowerCase().includes(search.toLowerCase()));
+      return findProducts;
+    }
   },
   Mutation: {
     addProducts: (_: any, { name, price, description }: any) => {

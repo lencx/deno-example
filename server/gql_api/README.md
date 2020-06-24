@@ -19,4 +19,12 @@ mutation {
     success
   }
 }
+
+# fuzzy matching product name
+query {
+  searchProducts(search: "te") {
+    name
+    description
+  }
+}
 ```
