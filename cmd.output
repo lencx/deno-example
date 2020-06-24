@@ -6,4 +6,5 @@
 [33m[06] api/fs/cat.ts[39m: [32mdeno run --allow-read api/fs/cat.ts [file ...][39m
 [33m[07] api/fs/write.ts[39m: [32mdeno run --allow-write api/fs/write.ts[39m
 [33m[08] server/simpleServer.ts[39m: [32mdeno run --allow-net server/simpleServer.ts[39m
+[33m[09] server/gql_api/main.ts[39m: [32mdeno run --allow-net server/gql_api/main.ts[39m
 [33m[10] server/rest_api/main.ts[39m: [32mdeno run --allow-net server/rest_api/main.ts[39m
